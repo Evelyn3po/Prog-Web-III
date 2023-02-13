@@ -1,1 +1,55 @@
-
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Cadastro</title>
+</head>
+<body>  
+<div >
+<form action="index.html" method="post">
+<h1> Cadastrar usuário </h1>
+<body>
+    <form>
+	<fieldset>
+	    <legend> 1 Dados pessoais </legend>
+		<label for="fname"> Nome:</label>
+        <input type="text" id="fname" name="fname"> 
+		<label for="pname"> Email:</label>
+		<input type="text" id="lname" name="lname"> 
+		<label for="pname"> Senha:</label>
+		<input type="text" id="pname" name="pname">
+		<label for="jname"> Confirma Senha:</label>
+		<input type="text" id="jname" name="jname"> 
+		<label for="oname"> Idade:</label>
+		<input type="radio" id="acima 17" name="fav_language" value="acima 17"> 
+		<label for="acima 17">Acima 17</label> <br> <br> 
+		<input type="radio" id="abaixo ou igual 17" name="fav_language" value="abaixo ou igual 17"> 
+		<label for="abaixo ou igual 17">Abaixo ou igual 17</label> <br> <br>
+	</fieldset>
+	</form>
+    <form>
+	<fieldset>
+	<legend> 2 Perfil </legend>
+		<form action="/action_page.php">
+		<label for="w3review"> Descrição:</label>
+		<textarea id="w3review" name="w3review" rows="4" cols="50"> 
+		</textarea>
+		<form action="/action_page.php">
+		<label for="fname"> Perfil Trabalho:</label>
+		<select name="perfil" id="perfil">
+		<option value="front-end developer">Front-End Developer</option>
+		</select>
+		<label for="uname"> Interesses:</label>
+		<input type="checkbox" id="vehicle1" name="vehicle1" value="programador"> 
+		<label for="programador"> Programador</label><br> <br>
+		<input type="checkbox" id="vehicle2" name="vehicle2" value="Design"> 
+		<label for="design"> Design</label><br> <br>
+		<input type="checkbox" id="vehicle3" name="vehicle3" value="analista"> 
+		<label for="analista"> Analista</label><br> <br>
+	</form>
+	</fieldset>
+<button type="submit">Enviar dados</button>
+</form>
+</div>
+</body>
+</html>
